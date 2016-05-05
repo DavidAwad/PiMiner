@@ -1,0 +1,3 @@
+# files to ignore when creating the docker image
+LICENSE.txt
+README.md

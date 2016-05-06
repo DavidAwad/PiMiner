@@ -1,24 +1,33 @@
-PiMiner v1.1
+PiMiner
 =======
 
-Python scripts for interfacing cgminer with the Adafruit 16x2 LCD + Keypad Kit for Raspberry Pi.
+Software Image Source for [Resin.io](http://resin.io) to deploy to a variable cluster of Raspberry Pi nodes with ASIC bitcoin miners attached.
 
-Project tutorial: http://learn.adafruit.com/piminer-raspberry-pi-bitcoin-miner
+Each node will have a dashbaord containing 
 
-In progress!
 
-Adafruit invests time and resources providing this open source code, please support Adafruit and open-source hardware by purchasing products from Adafruit!
 
-Written by Collin Cunningham for Adafruit Industries. BSD license, all text above must be included in any redistribution
+Development
+-----------
+Python
+- Flask
 
-To download, log into your Pi with Internet accessibility and type: git clone https://github.com/adafruit/PiMiner.git
+
+Original Project tutorial: http://learn.adafruit.com/piminer-raspberry-pi-bitcoin-miner
+
+
+Contributors
+-------------
+Original codebase written by Collin Cunningham for Adafruit Industries. BSD license, all text above must be included in any redistribution.
 
 
 Changes
 -------------
+Version 1.2.0 (forked by DavidAwad)
+- starting a dashboard for node stats
 
 Version 1.1.1 (forked by denmojo)
-- Added support for bitstamp exchange rates (less price deviation than mtgox) in screen selection 3.
+- Added support for bitstamp exchange rates (less price deviation than mt.gox) in screen selection 3.
 - Retained compatibility with mtgox.
 
 Version 1.1
@@ -28,7 +37,6 @@ Version 1.1
 - Revised error % calculation: 100 * HW / (diff1shares + HW)
 - Added MtGox last, high, & low price ("currency" var can be set in script)
 - Misc. tutorial revisions
-
 
 Version 1.0
 - Initial release
